@@ -17,9 +17,10 @@
 	// };
 </script>
 
-<form on:submit|preventDefault={handleSubmit} method="post">
+<form method="post" action="?/login">
 	<p>{form?.message || ''}</p>
 	<input type="text" name="username" placeholder="username" />
 	<input type="password" name="password" placeholder="Password" />
 	<button type="submit">Login</button>
+	<button formaction="?/register">Register</button>
 </form>
